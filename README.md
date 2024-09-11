@@ -57,11 +57,6 @@ where $R_s$ is the critical radius of separation. Only drones $j$ closer than $R
 
 In reality, birds can't go arbitrarily fast. We can add another rule to limit the velocity of drones with a $v_{lim}$ parameter. Typical value could be 20.
 
-#### Bounding the position
-
-For simulation purposes, drones will need to remain in a given box (the screen). We will simply say that if the position in $x$ or $y$ direction exceeds a certain amount, then add a velocity $v_b$ in the opposite direction to induce a smooth return to the simulation space. Typical value of $v_b$ is around 10.
-Alternatively, they can wrap around the screen.
-
 ## Parameters definition
 
 All parameters of the simulation will be grouped in a `params.py` file.
