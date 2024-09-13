@@ -2,18 +2,9 @@
 
 This code is an expansion of Florimond Manca's work: https://github.com/florimondmanca/pyboids
 
-## Class definition
-
-- `Drone` : contains the position and velocity of a given drone and packs several methods implementing the previous rules:
-	- `align(self, others)`
-	- `cohere(self, others)`
-	- `separate(self, others)`
-- `Swarm` : groups a certain number of `Drone` objects and manages their interactions.
-- `Simulation` : runs the simulation (Pygame application), with interactive functionalities.
-
 ## How it all works
 
-This is a simulation that aims at representing or recreating the behaviour of flocking birds. There are three rules that the drones simulation relies on:
+This simulation aims at recreating the behaviour of flocking birds. There are three rules that the drones simulation relies on:
 
 - alignment : the velocities of nearby drones tend to align (make a drone's velocity align with the average velocity of nearby drones)
 - cohesion : drones cluster together (average the position of nearby drones and move a bit towards that position;)
@@ -55,7 +46,16 @@ where $R_s$ is the critical radius of separation. Only drones $j$ closer than $R
 
 #### Bounding the velocity
 
-In reality, birds can't go arbitrarily fast. We can add another rule to limit the velocity of drones with a $v_{lim}$ parameter. Typical value could be 20.
+In reality, birds can't go arbitrarily fast. We can add another rule to limit the velocity of drones with a $v_{lim}$ parameter. This value can be modified in `params.py`.
+
+## Class definition
+
+- `Drone` : defines the position and velocity of a given drone and implements the rules:
+	- `align(self, others)`
+	- `cohere(self, others)`
+	- `separate(self, others)`
+- `Swarm` : groups a certain number of `Drone` objects and manages their interactions.
+- `Simulation` : runs the simulation (Pygame application), with interactive functionalities.
 
 ## Parameters definition
 
