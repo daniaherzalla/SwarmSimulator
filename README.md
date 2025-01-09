@@ -65,6 +65,11 @@ All parameters of the simulation will be grouped in a `params.py` file.
 
 PyGame Requires Python 3.6 to work properly. Future versions work but they have clashes.
 
+Run the app by first `cd` into the `swarm` folder then running
+```py
+python -m main
+```
+
 ## Resources
 
 http://www.vergenet.net/~conrad/drones/pseudocode.html
