@@ -1,2 +1,7 @@
 numpy==1.13.3
-pygame==1.9.3
+pygame==2.6.1
+pandas==1.0.5
+scipy==1.4.1
+Pillow==8.4.0
+matplotlib==3.2.2
+requests==2.27.1
