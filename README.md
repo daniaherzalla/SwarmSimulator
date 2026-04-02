@@ -1,8 +1,10 @@
 # Swarm Simulator
 
-This code is an expansion of Florimond Manca's work: https://github.com/florimondmanca/pyboids
+![jl](https://github.com/user-attachments/assets/335ddb76-62c7-495a-a1da-28c04e2f6b3a)
 
-## How it all works
+## How it works
+
+This code is an expansion of Florimond Manca's work: https://github.com/florimondmanca/pyboids
 
 This simulation aims at recreating the behaviour of flocking birds. There are three rules that the drones simulation relies on:
 
